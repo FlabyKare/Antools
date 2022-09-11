@@ -299,6 +299,7 @@ table {
 body {
   background: #1e252b;
   padding: 31px 0 98px 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -817,6 +818,9 @@ main .buttons {
   background: #ff6e30;
   color: #fdf5ff;
 }
+.tools_item:hover .sign_in:hover {
+  background: #b04314;
+}
 .tools_item:hover .tools_item_icon {
   opacity: 1;
 }
@@ -852,7 +856,7 @@ main .buttons {
 
 .tools_item_title h5 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 36px;
   color: rgba(255, 255, 255, 0.78);
 }
@@ -972,4 +976,28 @@ main .buttons {
 .gold_star .star path {
   fill: #fdad00 !important;
   fill-opacity: 1 !important;
+}
+
+.load_more {
+  background: #1e252b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff6e30;
+  padding: 17px 0;
+  width: 184px;
+  text-align: center;
+  margin: 100px auto 0;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.load_more:hover {
+  background: #34404b;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
