@@ -47,7 +47,7 @@ const menuLinks = document.querySelectorAll(".links .menu_link");
 const mobile_nav = document.querySelector(".mobile_nav");
 
 const navClassAppend = () => {
-    mobile_nav.classList.toggle("nav_100");
+   mobile_nav.classList.toggle("nav_100");
 };
 const menuWrapper = () => {
    menu_wrapper.classList.toggle("right_0");
@@ -65,3 +65,28 @@ function toggleMenu() {
 
 menu_btn.addEventListener("click", toggleMenu);
 menuLinks.forEach((link) => link.addEventListener("click", toggleMenu));
+
+// Добавленеие цвета при нажатии ( избранное, закладки во 2 секции )
+const hearts = document.querySelectorAll(".heart_svg");
+const stars = document.querySelectorAll(".star_svg");
+const heartAppendClass = () => {
+   heart.addEventListener("click", () => {
+      heart.classList.toggle("red_heart");
+   });
+};
+const starAppendClass = () => {
+   star.addEventListener("click", () => {
+      star.classList.toggle("gold_star");
+   });
+};
+
+for (const heart_ of hearts) {
+    heart_.addEventListener("click", () => {
+        heart_.classList.toggle("red_heart");
+   });
+}
+for (const star_ of stars) {
+    star_.addEventListener("click", () => {
+        star_.classList.toggle("gold_star");
+   });
+}
