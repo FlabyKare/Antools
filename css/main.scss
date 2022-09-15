@@ -251,6 +251,7 @@ header {
       a {
          font-size: 28px;
          line-height: 40px;
+         cursor: pointer !important;
       }
    }
 }
@@ -325,6 +326,7 @@ nav {
       }
    }
 }
+
 .active_list {
    overflow: visible !important;
    &:hover {
@@ -432,7 +434,7 @@ nav {
       width: 100%;
    }
 }
-main {
+.main {
    max-width: 1450px;
    margin-top: 104px !important;
    display: flex;
@@ -454,7 +456,7 @@ main {
       background: #1e252b;
       transition: 0.65s;
       cursor: pointer;
-      padding: 15px 15px 10px;
+      padding: 17px 16px 8px;
       border-radius: 50%;
       * {
          cursor: pointer;
@@ -473,7 +475,7 @@ main {
    }
 }
 .instagram {
-   padding: 8px 11px 7px !important;
+   padding: 11px 11px 3px !important;
 
    &:hover {
       svg {
@@ -501,7 +503,19 @@ main {
       }
    }
 }
-
+.heart_svg,
+.star_svg {
+   height: 41px !important;
+}
+.element-animation {
+   opacity: 0.15;
+   transform: scale(0.9);
+}
+.element-show {
+   opacity: 1;
+   transform: scale(1);
+   transition: 1s;
+}
 @media (max-height: 699.98px) {
    .menu_wrapper {
       margin-top: 10px !important;
@@ -515,7 +529,7 @@ main {
    font-style: normal;
    margin-top: 170px;
    .buttons {
-      width: 106px;
+      min-width: 106px;
       button {
          width: 100%;
       }
@@ -734,5 +748,114 @@ main {
       background: #34404b;
       border: 1px solid rgba(255, 255, 255, 0.8);
       transform: scale(1.1);
+   }
+}
+
+.tools_wrapper2 {
+   margin-top: 25px;
+   display: none;
+}
+.visibleList {
+   display: flex !important;
+}
+.buttonVisible {
+   #button2 {
+      display: block !important;
+   }
+   #button {
+      display: none;
+   }
+}
+#button2 {
+   display: none;
+}
+
+.partners {
+   margin-top: 200px;
+   margin-bottom: 200px;
+   padding: 55px 82px;
+   background: rgba(44, 53, 61, 0.2);
+   backdrop-filter: blur(50px);
+   border-radius: 25px;
+   position: relative;
+   overflow: hidden;
+   .blur_circle {
+      position: absolute;
+      opacity: 1;
+      top: -15%;
+      left: -30px;
+      background: rgba(255, 110, 48, 0.6);
+      -webkit-filter: blur(25px);
+      filter: blur(44px);
+      width: 106px;
+      height: 105px;
+   }
+   h6 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+   }
+   ul {
+      display: flex;
+      gap: 107px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 55px;
+      justify-content: center;
+
+      * {
+         transition: 0.5s;
+         cursor: pointer;
+      }
+      li {
+         &:hover {
+            transform: scale(1.1);
+            path {
+               fill-opacity: 1;
+            }
+         }
+      }
+   }
+}
+
+.programs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+   main {
+    width: 100%;
+    max-width: 401px;
+    display: inline-block;
+      h1 {
+         font-weight: 500;
+         font-size: 48px;
+         line-height: 130%;
+         color: rgba(255, 255, 255, 0.9);
+      }
+      p {
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 30px;
+         color: rgba(255, 255, 255, 0.55);
+         margin-top: 30px;
+         margin-bottom: 60px;
+      }
+      .buttons{
+        max-width: 198px;
+      }
+   }
+   .tools_wrapper{
+    width: 100%;
+    max-width: 600px;
+    justify-content: start;
+    .tools_item{
+        width: 47%;
+        .buttons{
+            min-width: 106px;
+        }
+    }
    }
 }
