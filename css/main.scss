@@ -314,10 +314,13 @@ nav {
       top: 135%;
       transition: 0.5s;
       width: 100%;
+      * {
+         cursor: pointer;
+      }
       li {
+         width: fit-content;
          transition: 0.5s;
          color: rgba(255, 255, 255, 0.35);
-         cursor: pointer;
          //  padding-left: 5%;
          &:hover {
             background: #5d5d5d;
@@ -961,6 +964,7 @@ nav {
    height: 8px;
    width: 44px;
    border-radius: 4px;
+   margin: 0 9px;
 }
 .slick-active {
    button {
@@ -997,4 +1001,104 @@ nav {
 }
 .mobile_visible {
    display: none;
+}
+
+.subscribe {
+   margin-top: 320px;
+   margin-bottom: 240px;
+   .buttons {
+      right: 12px;
+      min-width: 130px;
+   }
+   .header_info_input {
+      max-width: 549px;
+      margin: 100px auto 0;
+      input {
+         font-family: "Poppins";
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 21px;
+         color: rgba(255, 255, 255, 0.38);
+         background: #283036;
+         border-radius: 15px;
+         border: none;
+         outline: none;
+         padding: 8px 11px 8px 24px;
+         width: 100%;
+         height: 64px;
+         &::placeholder {
+            font-family: "Poppins";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(255, 255, 255, 0.38);
+         }
+      }
+   }
+}
+
+.first_col {
+   max-width: 240px;
+   text-align: left;
+   margin-right: 35px;
+}
+.first_col_subtitle {
+   margin: 25px auto 21px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: rgba(255, 255, 255, 0.9);
+}
+.footer_container {
+   padding: 0 5%;
+   display: flex;
+   gap: 115px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+footer {
+   border-top: 0.5px solid rgba(255, 255, 255, 0.08);
+   padding-top: 70px;
+   * {
+      cursor: pointer;
+   }
+   p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      color: rgba(255, 255, 255, 0.55);
+   }
+
+   ul {
+
+    max-width: 197px;
+
+    width: fit-content;
+      h6 {
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 30px;
+         color: rgba(255, 255, 255, 0.9);
+         margin-bottom: 20px;
+      }
+      li {
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 24px;
+         color: rgba(255, 255, 255, 0.55);
+         transition: 0.5s;
+         &:hover {
+            color: rgba(255, 255, 255, 0.25);
+         }
+      }
+      li:nth-child(3) {
+         margin: 10px auto;
+      }
+   }
+//    .second_col {
+//       display: flex;
+//       gap: 115px;
+//       flex-wrap: wrap;
+//    }
 }
