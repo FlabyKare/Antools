@@ -94,3 +94,22 @@ for (let star_ of stars) {
       star_.classList.toggle("gold_star");
    });
 }
+
+$(".slider_wrapper").slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: true,
+   dots: true,
+   //    autoplay: true,
+   //    autoplayspeed: 3000,
+   responsive: [
+      {
+         breakpoint: 768,
+         settings: {
+            dots: true,
+            arrows: false
+         },
+      },
+   ],
+});
