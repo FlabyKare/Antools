@@ -82,14 +82,85 @@
             justify-content: center !important;
   }
 }
-@media (max-height: 639.98px) {
-  .menu_wrapper {
-    min-height: 110vh !important;
+@media (max-width: 465.98px) {
+  footer * {
+    text-align: center !important;
   }
-  .menu_wrapper .element-animation {
+}
+@media (min-width: 466px) and (max-width: 575.98px) {
+  .first_col {
+    margin-right: 0 !important;
+    max-width: 188px !important;
+  }
+  .first_col h6 {
+    font-size: 13px !important;
+    margin: 13px auto 10px !important;
+  }
+  .first_col p {
+    font-size: 11px !important;
+  }
+  footer ul:nth-child(4) {
+    min-width: 137px !important;
+  }
+  footer ul {
+    min-width: -webkit-fit-content !important;
+    min-width: -moz-fit-content !important;
+    min-width: fit-content !important;
+  }
+  footer ul h6 {
+    font-size: 13px !important;
+  }
+  footer ul li {
+    font-size: 11px !important;
+    line-height: 12px !important;
+  }
+  .footer_container {
+    padding: 0 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+}
+@media (min-height: 555px) and (max-height: 699.98px) {
+  .element-animation {
     opacity: 1 !important;
     -webkit-transform: scale(1) !important;
             transform: scale(1) !important;
+  }
+  .menu_wrapper {
+    min-height: 110vh !important;
+  }
+  .menu_wrapper .menu_link {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+}
+@media (min-height: 433px) and (max-height: 554.98px) {
+  .element-animation {
+    opacity: 1 !important;
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+  .menu_wrapper {
+    min-height: 120vh !important;
+  }
+  .menu_wrapper .menu_link {
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+}
+@media (max-height: 432.98px) {
+  .element-animation {
+    opacity: 1 !important;
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+  .menu_wrapper {
+    min-height: 150vh !important;
   }
   .menu_wrapper .menu_link {
     font-size: 20px !important;

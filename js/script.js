@@ -17,17 +17,18 @@ for (let elm of elements) {
 
 //Плавность якорных ссылок
 const anchors = document.querySelectorAll('a[href*="#"]');
-for (let anchor of anchors) {
-   anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      const blockID = anchor.getAttribute("href").substr(1);
-
-      document.getElementById(blockID).scrollIntoView({
-         behavior: "smooth",
-         block: "start",
+const bodyWidth = document.body.clientWidth;
+if (bodyWidth >= 877) {
+   for (let anchor of anchors) {
+      anchor.addEventListener("click", function (e) {
+         e.preventDefault();
+         const blockID = anchor.getAttribute("href").substr(1);
+         document.getElementById(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+         });
       });
-   });
+   }
 }
 
 // Выпадающий список в шапке сайта
@@ -108,7 +109,7 @@ $(".slider_wrapper").slick({
          breakpoint: 768,
          settings: {
             dots: true,
-            arrows: false
+            arrows: false,
          },
       },
    ],
