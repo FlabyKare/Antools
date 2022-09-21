@@ -126,6 +126,7 @@ table {
 
 * {
    box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
    background: #1e252b;
@@ -1071,10 +1072,9 @@ footer {
    }
 
    ul {
+      max-width: 197px;
 
-    max-width: 197px;
-
-    width: fit-content;
+      width: fit-content;
       h6 {
          font-weight: 500;
          font-size: 20px;
@@ -1096,9 +1096,9 @@ footer {
          margin: 10px auto;
       }
    }
-//    .second_col {
-//       display: flex;
-//       gap: 115px;
-//       flex-wrap: wrap;
-//    }
+   //    .second_col {
+   //       display: flex;
+   //       gap: 115px;
+   //       flex-wrap: wrap;
+   //    }
 }
