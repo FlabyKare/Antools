@@ -169,6 +169,32 @@
       }
    }
 }
+@media (min-width: 440px) and (max-width: 575.98px) {
+   .subscribe {
+      .header_info_input .buttons {
+         top: 5.1% !important;
+      }
+   }
+}
+@media (min-width: 440px) {
+   .subscribe {
+      .header_info_input .buttons {
+         button {
+            padding-right: 12px !important;
+            padding-left: 12px !important;
+         }
+      }
+   }
+}
+@media (min-width: 440px) and (max-width: 477.98px) {
+   .subscribe {
+      .header_info_input .buttons {
+         button {
+            font-size: 12px !important;
+         }
+      }
+   }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
    .first_col {
       margin-right: 0 !important;
