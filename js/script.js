@@ -14,6 +14,15 @@ let elements = document.querySelectorAll(".element-animation");
 for (let elm of elements) {
    observer.observe(elm);
 }
+// Preloader
+
+window.onload = function () {
+   document.body.classList.add("loaded_hiding");
+   window.setTimeout(function () {
+      document.body.classList.add("loaded");
+      document.body.classList.remove("loaded_hiding");
+   }, 500);
+};
 
 //Плавность якорных ссылок
 const anchors = document.querySelectorAll('a[href*="#"]');
