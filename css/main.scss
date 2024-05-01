@@ -132,6 +132,10 @@ body {
    background: #1e252b;
    padding: 31px 0 98px 0;
    font-family: "Poppins", sans-serif;
+
+   &:not(.loaded) {
+      overflow: hidden;
+   }
 }
 .loaded {
    #preloader {

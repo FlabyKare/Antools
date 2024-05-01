@@ -379,8 +379,8 @@
 }
 @media (min-width: 877px) {
   .mobile_nav,
-.burger,
-.menu_wrapper {
+  .burger,
+  .menu_wrapper {
     display: none !important;
   }
 }
@@ -645,6 +645,9 @@ body {
   background: #1e252b;
   padding: 31px 0 98px 0;
   font-family: "Poppins", sans-serif;
+}
+body:not(.loaded) {
+  overflow: hidden;
 }
 
 .loaded #preloader {
